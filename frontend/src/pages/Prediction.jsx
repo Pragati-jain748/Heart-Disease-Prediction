@@ -49,7 +49,7 @@ function Prediction() {
 
         try {
             const response = await axios.post(
-                "https://heart-disease-backend-3o3m.onrender.com/predict", 
+                "https://heart-disease-backend-3o3m.onrender.com/predict",
 
                 {
                     name,
@@ -111,17 +111,18 @@ function Prediction() {
 
         } catch (error) {
 
-            console.error(error.response?.data || error.message);
+            console.log("ERROR STATUS:", error.response?.status);
+            console.log("ERROR DATA:", JSON.stringify(error.response?.data));
+            console.log("ERROR MESSAGE:", error.message);
 
             alert(
-                error.response?.data?.error ||
-                "Prediction failed. Please try again."
+                JSON.stringify(error.response?.data) ||
+                error.message ||
+                "Prediction failed"
             );
 
         } finally {
-
             setLoading(false);
-
         }
 
     };
