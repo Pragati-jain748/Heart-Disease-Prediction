@@ -404,19 +404,17 @@ Screenshots of the application will be added here.
 
 ### Prediction Page
 
-![Prediction Page](screenshots/prediction.png)
+![Prediction Page](screenshots/prediction-form.png)
 
 ### Prediction Result
 
-![Prediction Result](screenshots/result.png)
+![Prediction Result](screenshots/prediction-result.png)
 
-### Prediction History
+### Forgot Password
+![Forgot Password](screenshots/forgot-password.png)
 
-![Prediction History](screenshots/history.png)
-
-### User Profile
-
-![Profile](screenshots/profile.png)
+### Reset Password
+![Reset Password](screenshots/reset-password.png)
 
 ---
 
