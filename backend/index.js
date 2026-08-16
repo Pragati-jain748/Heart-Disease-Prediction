@@ -8,7 +8,7 @@ const bcrypt = require("bcrypt");
 
 const connectDB = require("./config/db");
 
-const Prediction = require("./models/Prediction");
+const Prediction = require("./models/prediction");
 const User = require("./models/User");
 
 const authRoutes = require("./routes/authRoutes");
