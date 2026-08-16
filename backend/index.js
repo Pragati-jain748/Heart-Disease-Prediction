@@ -15,7 +15,7 @@ const authRoutes = require("./routes/authRoutes");
 const authMiddleware = require("./middleware/authMiddleware");
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 connectDB();
 
@@ -149,7 +149,7 @@ app.post("/predict", authMiddleware, async (req, res) => {
     try {
 
         const response = await axios.post(
-            "http://127.0.0.1:8000/predict",
+           `${process.env.ML_API_URL}/predict`,
             {
                 name,
                 phone,
