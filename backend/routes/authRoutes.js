@@ -3,7 +3,7 @@ const User = require("../models/User");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const authMiddleware = require("../middleware/authMiddleware");
-const Otp = require("../models/Otp");
+const Otp = require("../models/otp");
 const sendEmail = require("../utils/sendEmail");
 
 
