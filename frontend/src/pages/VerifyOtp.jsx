@@ -39,7 +39,7 @@ function VerifyOTP() {
 
             const response = await axios.post(
 
-                "http://localhost:5000/verify-otp",
+                    "https://heart-disease-backend-3o3m.onrender.com/verify-otp", 
 
                 {
                     email: email,
@@ -52,7 +52,6 @@ function VerifyOTP() {
             console.log(response.data);
 
             alert(response.data.message);
-            
             navigate("/reset-password");
 
 

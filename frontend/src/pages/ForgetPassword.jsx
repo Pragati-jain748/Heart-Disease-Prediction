@@ -23,7 +23,7 @@ function ForgetPassword() {
         try {
             const response = await axios.post(
 
-                "http://localhost:5000/ForgetPassword",
+                "https://heart-disease-backend-3o3m.onrender.com/ForgetPassword",
 
                 {
                     email: email

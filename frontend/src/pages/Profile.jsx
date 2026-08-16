@@ -17,7 +17,7 @@ function Profile() {
             try {
 
                 const response = await axios.get(
-                    "http://localhost:5000/profile",
+                    "https://heart-disease-backend-3o3m.onrender.com/profile",
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem("token")}`

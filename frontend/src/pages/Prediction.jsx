@@ -49,7 +49,7 @@ function Prediction() {
 
         try {
             const response = await axios.post(
-                "http://localhost:5000/predict",
+                "https://heart-disease-backend-3o3m.onrender.com/predict", 
 
                 {
                     name,

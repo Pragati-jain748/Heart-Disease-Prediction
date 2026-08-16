@@ -23,7 +23,7 @@ function ResetPassword() {
 
 
             const response = await axios.post(
-                "http://localhost:5000/reset-password",
+                "https://heart-disease-backend-3o3m.onrender.com/reset-password",
                 {
                     email: email,
                     newPassword: newPassword,

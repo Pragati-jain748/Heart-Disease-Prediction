@@ -15,7 +15,7 @@ function History() {
             try {
 
                 const response = await axios.get(
-                    "http://localhost:5000/history",
+                    "https://heart-disease-backend-3o3m.onrender.com/history",
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem("token")}`
